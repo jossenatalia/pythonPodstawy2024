@@ -21,7 +21,7 @@ with open(filename, 'w', newline='') as csvfile:
     # csvwriter = csv.writer(csvfile)
     # csvwriter.writerow(fields)
     # csvwriter.writerow(row)
-    csvwriter = csv.DictWriter(csvfile, fieldnames=fields, delimiter=';')
+    csvwriter = csv.DictWriter(csvfile, fieldnames=fields, delimiter=',')
     csvwriter.writeheader()
     #zapisanie pojedynczego wiersza
     # csvwriter.writerow(dict)
