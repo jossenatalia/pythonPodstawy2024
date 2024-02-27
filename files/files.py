@@ -17,29 +17,29 @@
     ========= ===============================================================
 """
 
-with open('test.log', 'w') as fh:  # filehandler
+with open('../test.log', 'w') as fh:  # filehandler
     fh.write('Hello\n')
     fh.write('Kolejne\n')
     fh.write('Jeszcze jeden\n')
 
-with open('test.log', 'w') as fh:
+with open('../test.log', 'w') as fh:
     fh.write("Skasowany\n")
 
-with open('test.log', 'a') as f:
+with open('../test.log', 'a') as f:
     f.write("Dodane\n")
     f.write("Kolejne dodane\n")
 
 try:
-    with open('test.log', "x") as t:
+    with open('../test.log', "x") as t:
         t.write("Dodane\n")
 except FileExistsError:
     print("Plik istnieje, użyj innej nazwy")
 
-with open('test.log', 'a', encoding='utf-8') as f:
+with open('../test.log', 'a', encoding='utf-8') as f:
     f.write("Dodane\n")
     f.write("Kolejne dodane śś\n")
 
-with open('test.log', 'r', encoding='utf-8') as f:
+with open('../test.log', 'r', encoding='utf-8') as f:
     lines = f.read()
 
 print(lines)

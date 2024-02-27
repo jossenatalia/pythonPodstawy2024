@@ -1,6 +1,6 @@
 import chardet
 
-file_path = 'test.log'
+file_path = '../test.log'
 with open(file_path, "rb") as file:
     raw_data = file.read()
 
