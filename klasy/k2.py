@@ -64,3 +64,10 @@ for i in lista:
     print(i.name)
 
 print(lista)
+
+string_list = ''
+n = 3
+for i in range(1, n + 1):
+    string_list += str(i)
+    print(string_list)
+
