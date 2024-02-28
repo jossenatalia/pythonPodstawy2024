@@ -9,7 +9,7 @@ class Pojazd:
         print(f"Kolor: {self.kolor}")
 
 
-class Samochod(Pojazd):  #dziedziczenie po klasie pojazd
+class Samochod(Pojazd):  # dziedziczenie po klasie pojazd
     """
     Klasa samochód
     """
@@ -31,5 +31,6 @@ sam = Samochod("czerwony", "Izera")
 lista = [poj, sam]
 for i in lista:
     i.info()
-    # polimorfizm obiektych różnych klasa posiadaja wspólne cechy i funkcje, możemy te same operacje wykonywać
-
+    
+# polimorfizm obiektych różnych klasa posiadaja wspólne cechy i funkcje, możemy te same operacje wykonywać
+# dziedziczenie wspólne cechy dla obiektów i podklas, zachowanie cech polimorfizmu
